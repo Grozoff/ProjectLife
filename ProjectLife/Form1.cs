@@ -50,7 +50,7 @@ namespace ConsoleProjectLife
         }
         private void DrawNextGeneration()
         {
-            _graphics.Clear(BackColor);
+            _graphics.Clear(Color.Black);
 
             var field = _engine.GetCurrentGeneration();
 
@@ -60,7 +60,7 @@ namespace ConsoleProjectLife
                 {
                     if (field[x, y])
                     {
-                        _graphics.FillRectangle(Brushes.Crimson, x * _resolution, y * _resolution, _resolution - 1, _resolution - 1);
+                        _graphics.FillRectangle(Brushes.LawnGreen, x * _resolution, y * _resolution, _resolution - 1, _resolution - 1);
                     }
                 }
             }
